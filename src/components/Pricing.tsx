@@ -1,7 +1,23 @@
+'use client';
+
+import { useCallback } from 'react';
+
+declare let gtag: Function;
+
 export default function Pricing() {
+  const handlePlanClick = useCallback((planName: string) => {
+    gtag('event', 'pricing_plan_clicked', {
+      plan_name: planName.toLowerCase(),
+      plan_type: planName === '프로' ? 'popular' : 'standard',
+      currency: 'KRW',
+      value: planName === '프로' ? 29900 : 0,
+    });
+  }, []);
+
   const plans = [
     {
       name: "스타터",
+      id: "starter",
       description: "소규모 미용실 시작",
       price: "무료",
       period: "영구 무료",
@@ -16,6 +32,7 @@ export default function Pricing() {
     },
     {
       name: "프로",
+      id: "pro",
       description: "성장하는 미용실",
       price: "29,900",
       period: "월",
@@ -32,6 +49,7 @@ export default function Pricing() {
     },
     {
       name: "엔터프라이즈",
+      id: "enterprise",
       description: "대규모 네트워크",
       price: "맞춤",
       period: "협의",
@@ -103,6 +121,7 @@ export default function Pricing() {
 
                 {/* CTA Button */}
                 <button
+                  onClick={() => handlePlanClick(plan.name)}
                   className={`w-full py-3 rounded-lg font-semibold mb-8 transition ${
                     plan.highlight
                       ? "bg-white text-purple-600 hover:bg-gray-50"

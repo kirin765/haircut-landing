@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 
+declare let gtag: Function;
+
 export default function EmailForm() {
   const [email, setEmail] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -14,6 +16,12 @@ export default function EmailForm() {
       alert('이메일을 입력해주세요.');
       return;
     }
+
+    // Track conversion event in Google Analytics
+    gtag('event', 'email_signup_submitted', {
+      email_domain: email.split('@')[1],
+      source: 'email_form',
+    });
 
     setIsLoading(true);
 

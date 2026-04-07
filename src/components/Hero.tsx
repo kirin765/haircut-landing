@@ -1,9 +1,19 @@
 'use client';
 
+declare let gtag: Function;
+
 export default function Hero() {
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleHeroCTA = (action: string) => {
+    gtag('event', 'hero_cta_clicked', {
+      action: action,
+      location: 'hero_section',
+    });
+    handleScroll(action === 'signup' ? 'cta' : 'features');
   };
 
   return (
@@ -21,13 +31,13 @@ export default function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
-            onClick={() => handleScroll('cta')}
+            onClick={() => handleHeroCTA('signup')}
             className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition shadow-lg"
           >
             무료로 시작하기
           </button>
           <button
-            onClick={() => handleScroll('features')}
+            onClick={() => handleHeroCTA('learn_more')}
             className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition"
           >
             자세히 알아보기
