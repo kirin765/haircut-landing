@@ -61,15 +61,28 @@ npm start
 - 🔍 SEO 최적화
 - ⚡ 빠른 로딩 속도
 
-## 배포 (Vercel)
+## 배포 (Vercel) ✅
 
-이 프로젝트는 Vercel에 배포하도록 구성되어 있습니다.
+### 현재 배포 상태
+- **Production URL**: https://noshowhair.com
+- **Preview URL**: https://haircut-landing.vercel.app
+- **배포 상태**: ✅ LIVE
+- **Git**: https://github.com/kirin765/haircut-landing
 
+### 배포 내용
+✅ Google Analytics 4 - Conversion Tracking 활성화
+✅ Vercel Analytics - Real-time 모니터링
+✅ SEO 최적화 - robots.txt, sitemap.xml
+✅ 구조화된 데이터 - Schema.org JSON-LD
+✅ Naver 검색 - 인증 meta tag 설정
+✅ 커스텀 도메인 - noshowhair.com 연결
+
+### 로컬에서 배포
+GitHub 저장소를 Vercel에 연결하면 자동으로 배포됩니다.
+또는 수동 배포:
 ```bash
 vercel
 ```
-
-또는 GitHub 저장소를 Vercel에 연결하면 자동으로 배포됩니다.
 
 ## 이메일 폼 연동
 
@@ -102,6 +115,26 @@ const response = await fetch('/api/subscribe', {
 
 `src/app/layout.tsx`에서 SEO 메타데이터를 수정하세요.
 
+## 모니터링 & 분석
+
+### Google Analytics
+- **Dashboard**: https://analytics.google.com
+- **Conversion Events**:
+  - `pricing_plan_clicked` - 요금제 클릭
+  - `email_signup_submitted` - 이메일 가입
+  - `hero_cta_clicked` - Hero CTA 클릭
+- **Funnel Analysis**: GA Dashboard → Explore → Funnel Exploration
+
+### Vercel Analytics
+- **Dashboard**: https://vercel.com/dashboard
+- **Metrics**: Core Web Vitals, Page Performance, Real-time Users
+
+### SEO 모니터링
+- **Google Search Console**: https://search.google.com/search-console
+- **Naver Search Advisor**: https://searchadvisor.naver.com
+- **Sitemap**: https://noshowhair.com/sitemap.xml
+- **Robots.txt**: https://noshowhair.com/robots.txt
+
 ## 라이센스
 
 MIT
@@ -109,4 +142,5 @@ MIT
 ## 연락처
 
 - 📧 Email: hello@no-show-hair.com
+- 🌐 Website: https://noshowhair.com
 - 💬 KakaoTalk: (카카오톡 채널)
