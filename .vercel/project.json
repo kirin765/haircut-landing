@@ -1,0 +1,16 @@
+{
+  "projectId": "prj_EUOTaNmmpluKbB7QVGPPq0wn4ZLC",
+  "orgId": "team_989WocOrFnBwmBdUTXaWEnLS",
+  "projectName": "haircut-landing",
+  "settings": {
+    "createdAt": 1775547088106,
+    "framework": "nextjs",
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": null,
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "24.x"
+  }
+}
