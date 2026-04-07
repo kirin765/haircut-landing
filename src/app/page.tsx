@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import DevelopmentBanner from '@/components/DevelopmentBanner';
 import Hero from '@/components/Hero';
 import Problem from '@/components/Problem';
 import Solution from '@/components/Solution';
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <Header />
+      <DevelopmentBanner />
       <Hero />
       <Problem />
       <Solution />
