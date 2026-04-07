@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   ],
   creator: "Haircut Landing Team",
   robots: "index, follow",
-  canonical: "https://noshowhair.com",
   alternates: {
+    canonical: "https://noshowhair.com",
     languages: {
       en: "https://noshowhair.com/en",
       ko: "https://noshowhair.com",
