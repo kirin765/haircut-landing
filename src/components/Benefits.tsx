@@ -1,4 +1,11 @@
+'use client';
+
+import { useState } from 'react';
+import Toast from './Toast';
+
 export default function Benefits() {
+  const [toast, setToast] = useState<{ message: string; type: 'info' | 'warning' } | null>(null);
+
   const benefits = [
     {
       icon: "📈",
@@ -33,7 +40,16 @@ export default function Benefits() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <>
+      {toast && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          duration={4000}
+          onClose={() => setToast(null)}
+        />
+      )}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -66,11 +82,15 @@ export default function Benefits() {
           <p className="text-lg mb-8 text-white/90">
             매달 300만원 손실, 매일 2시간 낭비하는 현실에서 벗어나세요.
           </p>
-          <button className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition">
+          <button
+            onClick={() => setToast({ message: '아직 개발 중입니다. 곧 오픈될 예정입니다! 📅', type: 'info' })}
+            className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition"
+          >
             지금 무료로 시작하기
           </button>
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 }

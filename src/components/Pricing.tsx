@@ -1,10 +1,13 @@
 'use client';
 
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
+import Toast from './Toast';
 
 declare let gtag: Function;
 
 export default function Pricing() {
+  const [toast, setToast] = useState<{ message: string; type: 'info' | 'warning' } | null>(null);
+
   const handlePlanClick = useCallback((planName: string) => {
     gtag('event', 'pricing_plan_clicked', {
       plan_name: planName.toLowerCase(),
@@ -12,6 +15,8 @@ export default function Pricing() {
       currency: 'KRW',
       value: planName === '프로' ? 29900 : 0,
     });
+
+    setToast({ message: '아직 개발 중입니다. 곧 오픈될 예정입니다! 📅', type: 'info' });
   }, []);
 
   const plans = [
@@ -68,7 +73,16 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <>
+      {toast && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          duration={4000}
+          onClose={() => setToast(null)}
+        />
+      )}
+      <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -186,6 +200,7 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 }

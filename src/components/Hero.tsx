@@ -1,8 +1,13 @@
 'use client';
 
+import { useState } from 'react';
+import Toast from './Toast';
+
 declare let gtag: Function;
 
 export default function Hero() {
+  const [toast, setToast] = useState<{ message: string; type: 'info' | 'warning' } | null>(null);
+
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -13,11 +18,25 @@ export default function Hero() {
       action: action,
       location: 'hero_section',
     });
-    handleScroll(action === 'signup' ? 'cta' : 'features');
+
+    if (action === 'signup') {
+      setToast({ message: '아직 개발 중입니다. 곧 오픈될 예정입니다! 📅', type: 'info' });
+    } else {
+      handleScroll('features');
+    }
   };
 
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero text-white">
+    <>
+      {toast && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          duration={4000}
+          onClose={() => setToast(null)}
+        />
+      )}
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero text-white">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
           노쇼 없는<br />미용실이 되세요
@@ -64,6 +83,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 }
