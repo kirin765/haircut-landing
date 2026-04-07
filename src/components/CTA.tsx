@@ -14,7 +14,7 @@ export default function CTA() {
           매달 300만원 손실을 멈추는 가장 간단한 방법입니다.
         </p>
 
-        <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-8 sm:p-12 mb-12">
+        <div className="bg-white/95 backdrop-blur-sm border border-white/20 rounded-lg p-8 sm:p-12 mb-12">
           <EmailForm />
         </div>
 

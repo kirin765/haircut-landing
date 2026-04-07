@@ -76,7 +76,7 @@ export default function EmailForm() {
           {isLoading ? '진행중...' : '무료 가입'}
         </button>
       </div>
-      <p className="text-sm text-gray-500 mt-3">
+      <p className="text-sm text-gray-600 font-medium mt-3">
         💡 가입 후 5분 안에 무료로 체험할 수 있습니다. 신용카드는 필요 없습니다.
       </p>
     </form>
