@@ -45,6 +45,9 @@ export const metadata: Metadata = {
     description: "미용실 예약 관리의 모든 것을 자동화하세요.",
     images: ["https://noshowhair.com/og-image.png"],
   },
+  other: {
+    "naver-site-verification": "f4396b866197cd45412d09973db8cca2573ea0c8",
+  },
 };
 
 export const viewport: Viewport = {
