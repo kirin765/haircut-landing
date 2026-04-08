@@ -12,23 +12,37 @@ export default function EmailForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!email) {
+    const normalizedEmail = email.trim().toLowerCase();
+
+    if (!normalizedEmail) {
       alert('이메일을 입력해주세요.');
       return;
     }
 
-    // Track conversion event in Google Analytics
-    gtag('event', 'email_signup_submitted', {
-      email_domain: email.split('@')[1],
-      source: 'email_form',
-    });
-
     setIsLoading(true);
 
     try {
-      // TODO: Connect to your email service (e.g., Resend, SendGrid, etc.)
-      // For now, we'll just simulate success
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: normalizedEmail }),
+      });
+
+      const data = await response.json().catch(() => null);
+
+      if (!response.ok) {
+        throw new Error(data?.error ?? '구독 등록에 실패했습니다.');
+      }
+
+      if (typeof gtag === 'function') {
+        // Track conversion event in Google Analytics after a successful submission
+        gtag('event', 'email_signup_submitted', {
+          email_domain: normalizedEmail.split('@')[1],
+          source: 'email_form',
+        });
+      }
 
       setIsSubmitted(true);
       setEmail('');
@@ -48,10 +62,10 @@ export default function EmailForm() {
       <div className="text-center">
         <div className="text-4xl mb-4">✅</div>
         <h3 className="text-2xl font-bold text-gray-900 mb-2">
-          가입이 완료되었습니다!
+          이메일이 접수되었습니다!
         </h3>
         <p className="text-gray-600">
-          이메일 주소로 가입 완료 메시지를 보내드렸습니다.
+          등록해주신 이메일로 안내를 보내드리겠습니다.
         </p>
       </div>
     );

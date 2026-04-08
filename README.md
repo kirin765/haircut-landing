@@ -86,13 +86,13 @@ vercel
 
 ## 이메일 폼 연동
 
-현재 EmailForm 컴포넌트는 로컬 상태만 관리하고 있습니다. 실제 이메일 서비스와 연동하려면:
+현재 EmailForm 컴포넌트는 `/api/subscribe`로 제출되며, 서버에서 구독 알림 메일을 전송합니다.
 
-1. Resend, SendGrid, Mailgun 등의 이메일 서비스에 가입
-2. `src/app/api/subscribe/route.ts` API 엔드포인트 생성
-3. `src/components/EmailForm.tsx`의 `handleSubmit` 함수 수정
+### 저장 방식
 
-예시:
+- 메일 알림: `RESEND_API_KEY`와 `CONTACT_EMAIL`이 있으면 해당 주소로 새 구독 알림 전송
+
+### 프론트 요청 예시
 ```typescript
 const response = await fetch('/api/subscribe', {
   method: 'POST',
@@ -100,6 +100,14 @@ const response = await fetch('/api/subscribe', {
   body: JSON.stringify({ email }),
 });
 ```
+
+### 배포용 환경변수
+
+- `RESEND_API_KEY`: 메일 알림을 보낼 때 사용
+- `CONTACT_EMAIL`: 구독 알림을 받을 수신 이메일 주소. 현재 권장값은 `support@reviewboost.co.kr`
+- `RESEND_FROM_EMAIL`: 선택 사항, Resend 발신 주소
+
+참고: `RESEND_FROM_EMAIL`은 Resend에서 인증된 발신 주소를 쓰는 것이 안전합니다.
 
 ## 커스터마이제이션
 
