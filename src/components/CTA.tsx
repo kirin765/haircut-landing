@@ -35,7 +35,7 @@ export default function CTA() {
 
         <div className="mt-12 pt-12 border-t border-white/20">
           <p className="text-white/70 text-sm">
-            더 궁금한 점이 있으신가요? 📧 hello@no-show-hair.com 으로 문의주세요.
+            더 궁금한 점이 있으신가요? 📧 support@reviewboost.co.kr 으로 문의주세요.
           </p>
         </div>
       </div>

@@ -149,6 +149,6 @@ MIT
 
 ## 연락처
 
-- 📧 Email: hello@no-show-hair.com
+- 📧 Email: support@reviewboost.co.kr
 - 🌐 Website: https://noshowhair.com
 - 💬 KakaoTalk: (카카오톡 채널)

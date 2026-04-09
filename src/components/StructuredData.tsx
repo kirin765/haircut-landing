@@ -11,7 +11,7 @@ export default function StructuredData() {
     'contactPoint': {
       '@type': 'ContactPoint',
       'contactType': 'Customer Service',
-      'email': 'hello@no-show-hair.com',
+      'email': 'support@reviewboost.co.kr',
       'availableLanguage': ['Korean', 'English'],
     },
     'sameAs': [

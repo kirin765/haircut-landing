@@ -34,8 +34,8 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">연락처</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="mailto:hello@no-show-hair.com" className="text-gray-400 hover:text-white transition">
-                  hello@no-show-hair.com
+                <a href="mailto:support@reviewboost.co.kr" className="text-gray-400 hover:text-white transition">
+                  support@reviewboost.co.kr
                 </a>
               </li>
               <li><a href="tel:1234567890" className="text-gray-400 hover:text-white transition">카카오톡 상담</a></li>
