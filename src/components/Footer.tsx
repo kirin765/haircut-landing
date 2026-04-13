@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold text-lg mb-4">노쇼 없는 미용실</h3>
             <p className="text-sm text-gray-400">
-              미용실의 예약 관리 문제를 해결하는 자동 리마인드 서비스입니다.
+              노쇼 관리와 디자이너별 시술시간 기반 예약 운영을 돕는 소규모 미용실용 도구입니다.
             </p>
           </div>
 

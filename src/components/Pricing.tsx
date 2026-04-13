@@ -11,9 +11,9 @@ export default function Pricing() {
   const handlePlanClick = useCallback((planName: string) => {
     gtag('event', 'pricing_plan_clicked', {
       plan_name: planName.toLowerCase(),
-      plan_type: planName === '프로' ? 'popular' : 'standard',
+      plan_type: planName === '프로' ? 'popular' : planName === '팀' ? 'team' : 'standard',
       currency: 'KRW',
-      value: planName === '프로' ? 29900 : 0,
+      value: planName === '프로' ? 19000 : planName === '팀' ? 29000 : 0,
     });
 
     setToast({ message: '아직 개발 중입니다. 곧 오픈될 예정입니다! 📅', type: 'info' });
@@ -23,14 +23,14 @@ export default function Pricing() {
     {
       name: "스타터",
       id: "starter",
-      description: "소규모 미용실 시작",
+      description: "1인샵·초기 검증용",
       price: "무료",
       period: "영구 무료",
       features: [
-        "월 20명까지의 고객 리마인드",
+        "월 30건 시술 기록",
         "기본 자동 리마인드 (문자)",
-        "확인/취소 상태 수집",
-        "이메일 지원",
+        "디자이너 1명 기준 평균시간 계산",
+        "기본 권장 예약 간격 제안",
       ],
       cta: "무료로 시작",
       highlight: false,
@@ -38,34 +38,34 @@ export default function Pricing() {
     {
       name: "프로",
       id: "pro",
-      description: "성장하는 미용실",
-      price: "29,900",
+      description: "소규모 살롱 기본 운영용",
+      price: "19,000",
       period: "월",
       features: [
-        "월 무제한 고객 리마인드",
-        "자동 리마인드 (문자 + 카카오톡)",
-        "정책 템플릿 및 자동 기록",
-        "대시보드 분석",
-        "우선 지원 (카톡)",
-        "월 500회 문자 포함",
+        "월 무제한 시술 기록",
+        "자동 리마인드 (문자)",
+        "디자이너별·메뉴별 평균/편차 분석",
+        "밀림 위험 슬롯 표시",
+        "권장 예약 간격 제안",
+        "디자이너 3명까지 지원",
+        "이메일 지원",
       ],
       cta: "프로 시작하기",
       highlight: true,
     },
     {
-      name: "엔터프라이즈",
-      id: "enterprise",
-      description: "대규모 네트워크",
-      price: "맞춤",
-      period: "협의",
+      name: "팀",
+      id: "team",
+      description: "멀티디자이너·다점포 준비용",
+      price: "29,000",
+      period: "월",
       features: [
-        "무제한 고객 및 지점",
-        "모든 프로  기능 포함",
-        "커스텀 정책 설정",
-        "API 접근",
-        "전담 계정 매니저",
-        "우선 기술 지원",
-        "통합 분석 대시보드",
+        "디자이너 10명까지 지원",
+        "모든 프로 기능 포함",
+        "지점별 운영 기준 분리",
+        "월간 운영 리포트",
+        "우선 카카오톡 지원",
+        "추가 알림 발송 옵션",
       ],
       cta: "상담받기",
       highlight: false,
@@ -89,7 +89,7 @@ export default function Pricing() {
             합리적인 가격으로 시작하세요
           </h2>
           <p className="text-lg text-gray-600">
-            어떤 규모의 미용실이든 적합한 요금제가 있습니다
+            마이크로 SaaS답게 가볍게 도입하고, 운영 효과가 보이면 상위 플랜으로 올리는 구조입니다
           </p>
         </div>
 
@@ -180,16 +180,20 @@ export default function Pricing() {
                 a: "아니요, 언제든지 취소할 수 있습니다. 최소 계약 기간이 없습니다.",
               },
               {
+                q: "기존 예약 시스템을 바꿔야 하나요?",
+                a: "아니요. 첫 버전은 기존 예약 시스템을 유지한 채, 예약 데이터와 실제 시술시간 기록을 붙여 쓰는 방식입니다.",
+              },
+              {
+                q: "추천 예약 간격은 어떻게 계산되나요?",
+                a: "최근 5~20건의 디자이너별·시술별 실제 소요시간을 기준으로 평균과 편차를 계산해 권장값을 제안합니다.",
+              },
+              {
                 q: "문자 발송 비용이 별도로 들나요?",
-                a: "프로 플랜에는 월 500회 문자가 포함되어 있으며, 추가 발송은 건당 50원입니다.",
+                a: "초기 버전은 문자 리마인드 중심이며, 대량 발송이나 알림톡은 상위 옵션으로 분리하는 방향을 검토 중입니다.",
               },
               {
-                q: "스타터 플랜에서 프로 플랜으로 업그레이드할 수 있나요?",
-                a: "네, 언제든지 업그레이드할 수 있으며 비례 배분으로 청구됩니다.",
-              },
-              {
-                q: "지점이 여러 개면 어떻게 하나요?",
-                a: "엔터프라이즈 플랜이 적합합니다. 상담을 통해 맞춤 가격을 제공해 드립니다.",
+                q: "자동 최적화 엔진까지 제공하나요?",
+                a: "MVP는 아닙니다. 우선은 기록, 분석, 권장 간격, 밀림 위험 경고에 집중해 작은 팀도 바로 운영 개선 효과를 보게 합니다.",
               },
             ].map((item, idx) => (
               <div key={idx}>
