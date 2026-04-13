@@ -51,11 +51,11 @@ export default function HowItWorks() {
             <div>
               <p className="text-sm font-semibold text-purple-600 mb-3">MVP 범위</p>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                자동 최적화 엔진 전 단계까지만 정확하게 만듭니다
+                지금 바로 운영에 반영할 수 있는 기능부터 담았습니다
               </h3>
               <p className="text-gray-600 mb-6">
-                첫 버전은 추천과 경고에 집중합니다. 완전 자동 배치 최적화까지 가지 않아도,
-                실제 기록만 쌓이면 예약 간격 품질은 바로 개선됩니다.
+                첫 버전은 실제 기록, 권장 간격, 밀림 경고에 집중합니다. 예약표를 전면 교체하지
+                않아도 매일 반복되는 지연과 공실 문제를 훨씬 더 안정적으로 관리할 수 있습니다.
               </p>
               <ul className="space-y-3 text-gray-700">
                 <li>실제 시작/종료 시각 기록</li>

@@ -107,14 +107,14 @@ export default function MVPPreview() {
             MVP Preview
           </p>
           <h2 className="text-3xl font-bold leading-tight text-slate-950 sm:text-4xl">
-            제공한 목업처럼
+            한눈에 흐름이 읽히는
             <br />
-            실제 제품이 바로 읽히는 화면
+            살롱 운영 보드
           </h2>
           <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg">
-            밝은 톤의 운영 SaaS 레이아웃으로 다시 구성했습니다. 좌측 내비게이션,
-            상단 필터, 칸반형 운영 보드, 시술시간 기반 경고 카드가 한 화면에 보이도록
-            정리해 방문자가 제품 형태를 바로 이해할 수 있게 했습니다.
+            오늘 연락해야 할 예약, 실제 시술시간 반영 상태, 밀림 위험 슬롯을 한 화면에서
+            확인할 수 있도록 구성했습니다. 복잡한 설정 없이도 지금 어떤 예약이 위험한지
+            바로 판단할 수 있는 형태의 운영 화면입니다.
           </p>
         </div>
 
