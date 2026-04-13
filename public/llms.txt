@@ -1,0 +1,49 @@
+# 노쇼 없는 미용실
+
+> 소규모 미용실을 위한 예약 운영 최적화 도구. 자동 예약 리마인드로 노쇼를 줄이고, 디자이너별 실제 시술시간 기록으로 메뉴별 권장 예약 간격과 밀림 위험 슬롯을 제안한다.
+
+## Product Summary
+
+- Product: 노쇼 없는 미용실
+- Category: Software for small hair salons
+- Region: South Korea
+- Audience: 소규모 미용실 원장, 살롱 매니저, 예약 운영 담당자
+- Website: https://noshowhair.com
+
+## Core Problems Solved
+
+- 예약 리마인드 부재로 인한 노쇼와 당일 취소 손실
+- 디자이너별 실제 시술시간 편차로 인한 연쇄 지연
+- 염색, 펌, 커트 등 메뉴별 예약 간격을 감으로 잡는 문제
+- 공실 슬롯과 과밀 슬롯이 동시에 발생하는 운영 비효율
+
+## Core Features
+
+- 자동 예약 리마인드 발송
+- 노쇼 및 당일 취소 관리
+- 디자이너별 실제 시작 시각 및 종료 시각 기록
+- 최근 5~20건 기준 평균 시술시간 및 편차 계산
+- 메뉴별 권장 예약 간격 제안
+- 밀림 위험 슬롯 표시
+
+## Positioning
+
+- 기존 예약 시스템을 대체하기보다는 함께 사용하는 운영 보조 도구
+- 고객관리 CRM보다 예약 운영 정확도 개선에 집중
+- 자동 최적화 엔진보다 MVP 실행성과 현장 도입성을 우선
+
+## Pricing Snapshot
+
+- 스타터: 무료
+- 프로: 월 79,000원
+- 엔터프라이즈: 맞춤형
+
+## Important URLs
+
+- Home: https://noshowhair.com/
+- Pricing section: https://noshowhair.com/#pricing
+- Contact: mailto:support@reviewboost.co.kr
+
+## Contact
+
+- Email: support@reviewboost.co.kr

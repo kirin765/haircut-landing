@@ -8,10 +8,10 @@ export default function Header() {
           </h1>
         </div>
         <ul className="hidden md:flex items-center gap-8">
-          <li><a href="#features" className="text-gray-600 hover:text-gray-900 transition">기능</a></li>
-          <li><a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition">사용 방법</a></li>
+          <li><a href="#features" className="text-gray-600 hover:text-gray-900 transition">핵심 기능</a></li>
+          <li><a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition">운영 방식</a></li>
           <li><a href="#pricing" className="text-gray-600 hover:text-gray-900 transition">요금제</a></li>
-          <li><a href="#cta" className="text-gray-600 hover:text-gray-900 transition">시작하기</a></li>
+          <li><a href="#cta" className="text-gray-600 hover:text-gray-900 transition">사전 등록</a></li>
         </ul>
       </nav>
     </header>
