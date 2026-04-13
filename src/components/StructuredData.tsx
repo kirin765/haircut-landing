@@ -81,7 +81,7 @@ export default function StructuredData() {
     'offers': {
       '@type': 'AggregateOffer',
       'lowPrice': '0',
-      'highPrice': '79000',
+      'highPrice': '29000',
       'priceCurrency': 'KRW',
       'offers': [
         {
@@ -94,7 +94,14 @@ export default function StructuredData() {
         {
           '@type': 'Offer',
           'name': '프로',
-          'price': '79000',
+          'price': '19000',
+          'priceCurrency': 'KRW',
+          'url': 'https://noshowhair.com#pricing',
+        },
+        {
+          '@type': 'Offer',
+          'name': '팀',
+          'price': '29000',
           'priceCurrency': 'KRW',
           'url': 'https://noshowhair.com#pricing',
         },
@@ -136,7 +143,7 @@ export default function StructuredData() {
         'name': '문자 발송 비용이 별도로 들나요?',
         'acceptedAnswer': {
           '@type': 'Answer',
-          'text': '프로 플랜에는 월 1000회 문자가 포함되며 추가 발송 정책은 추후 안내됩니다.',
+          'text': '초기 버전은 문자 리마인드 중심이며, 대량 발송이나 알림톡은 상위 옵션으로 분리하는 방향을 검토 중입니다.',
         },
       },
       {

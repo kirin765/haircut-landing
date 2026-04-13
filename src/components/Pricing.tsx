@@ -11,9 +11,9 @@ export default function Pricing() {
   const handlePlanClick = useCallback((planName: string) => {
     gtag('event', 'pricing_plan_clicked', {
       plan_name: planName.toLowerCase(),
-      plan_type: planName === '프로' ? 'popular' : 'standard',
+      plan_type: planName === '프로' ? 'popular' : planName === '팀' ? 'team' : 'standard',
       currency: 'KRW',
-      value: planName === '프로' ? 79000 : 0,
+      value: planName === '프로' ? 19000 : planName === '팀' ? 29000 : 0,
     });
 
     setToast({ message: '아직 개발 중입니다. 곧 오픈될 예정입니다! 📅', type: 'info' });
@@ -23,13 +23,13 @@ export default function Pricing() {
     {
       name: "스타터",
       id: "starter",
-      description: "소규모 미용실 검증용",
+      description: "1인샵·초기 검증용",
       price: "무료",
       period: "영구 무료",
       features: [
-        "월 50건 시술 기록",
+        "월 30건 시술 기록",
         "기본 자동 리마인드 (문자)",
-        "디자이너 2명까지 평균시간 계산",
+        "디자이너 1명 기준 평균시간 계산",
         "기본 권장 예약 간격 제안",
       ],
       cta: "무료로 시작",
@@ -38,35 +38,34 @@ export default function Pricing() {
     {
       name: "프로",
       id: "pro",
-      description: "운영 최적화가 필요한 살롱",
-      price: "79,000",
+      description: "소규모 살롱 기본 운영용",
+      price: "19,000",
       period: "월",
       features: [
         "월 무제한 시술 기록",
-        "자동 리마인드 (문자 + 카카오톡)",
+        "자동 리마인드 (문자)",
         "디자이너별·메뉴별 평균/편차 분석",
         "밀림 위험 슬롯 표시",
         "권장 예약 간격 제안",
-        "우선 지원 (카톡)",
-        "월 1,000회 문자 포함",
+        "디자이너 3명까지 지원",
+        "이메일 지원",
       ],
       cta: "프로 시작하기",
       highlight: true,
     },
     {
-      name: "엔터프라이즈",
-      id: "enterprise",
-      description: "다점포·고급 운영팀",
-      price: "맞춤",
-      period: "협의",
+      name: "팀",
+      id: "team",
+      description: "멀티디자이너·다점포 준비용",
+      price: "29,000",
+      period: "월",
       features: [
-        "무제한 지점 및 디자이너",
+        "디자이너 10명까지 지원",
         "모든 프로 기능 포함",
         "지점별 운영 기준 분리",
-        "API 및 데이터 연동",
-        "전담 계정 매니저",
-        "우선 기술 지원",
-        "통합 운영 분석 대시보드",
+        "월간 운영 리포트",
+        "우선 카카오톡 지원",
+        "추가 알림 발송 옵션",
       ],
       cta: "상담받기",
       highlight: false,
@@ -90,7 +89,7 @@ export default function Pricing() {
             합리적인 가격으로 시작하세요
           </h2>
           <p className="text-lg text-gray-600">
-            CRM 전체 대체보다 가볍게 시작하고, 효과가 보이면 확장하는 구조입니다
+            마이크로 SaaS답게 가볍게 도입하고, 운영 효과가 보이면 상위 플랜으로 올리는 구조입니다
           </p>
         </div>
 
@@ -190,7 +189,7 @@ export default function Pricing() {
               },
               {
                 q: "문자 발송 비용이 별도로 들나요?",
-                a: "프로 플랜에는 월 1,000회 문자가 포함되며, 추가 발송은 추후 정책에 맞춰 안내됩니다.",
+                a: "초기 버전은 문자 리마인드 중심이며, 대량 발송이나 알림톡은 상위 옵션으로 분리하는 방향을 검토 중입니다.",
               },
               {
                 q: "자동 최적화 엔진까지 제공하나요?",
