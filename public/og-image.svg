@@ -1,0 +1,124 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#paint0_linear_164_2)"/>
+  <rect x="54" y="54" width="1092" height="522" rx="34" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="54" y="54" width="236" height="522" rx="34" fill="#FBFCFE"/>
+  <path d="M290 54V576" stroke="#E2E8F0" stroke-width="2"/>
+
+  <rect x="90" y="94" width="54" height="54" rx="18" fill="#0F172A"/>
+  <rect x="105" y="109" width="10" height="24" rx="5" fill="#2563EB"/>
+  <rect x="119" y="109" width="10" height="24" rx="5" fill="#2563EB"/>
+  <rect x="115" y="118" width="4" height="6" rx="2" fill="#14B8A6"/>
+  <circle cx="139" cy="99" r="8" fill="#F97316"/>
+  <text font-family="Apple SD Gothic Neo" x="158" y="117" fill="#0F172A" font-size="30" font-weight="700">노쇼 없는 미용실</text>
+  <text font-family="Apple SD Gothic Neo" x="92" y="182" fill="#64748B" font-size="19" font-weight="600">운영 대시보드 0.1</text>
+
+  <rect x="84" y="228" width="176" height="48" rx="14" fill="#EFF6FF"/>
+  <text font-family="Apple SD Gothic Neo" x="114" y="258" fill="#2563EB" font-size="20" font-weight="700">상담 현황 보드</text>
+  <text font-family="Apple SD Gothic Neo" x="94" y="318" fill="#64748B" font-size="20">오늘 리마인드</text>
+  <text font-family="Apple SD Gothic Neo" x="94" y="360" fill="#64748B" font-size="20">시술시간 기록</text>
+  <text font-family="Apple SD Gothic Neo" x="94" y="402" fill="#64748B" font-size="20">디자이너 분석</text>
+
+  <rect x="84" y="456" width="176" height="86" rx="20" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <text font-family="Apple SD Gothic Neo" x="106" y="489" fill="#94A3B8" font-size="16" font-weight="700">오늘의 핵심</text>
+  <text font-family="Apple SD Gothic Neo" x="106" y="518" fill="#64748B" font-size="16">리마인드 예정</text>
+  <text font-family="Apple SD Gothic Neo" x="217" y="518" fill="#0F172A" font-size="18" font-weight="700">24건</text>
+  <text font-family="Apple SD Gothic Neo" x="106" y="541" fill="#64748B" font-size="16">밀림 위험 슬롯</text>
+  <text font-family="Apple SD Gothic Neo" x="216" y="541" fill="#E11D48" font-size="18" font-weight="700">2개</text>
+
+  <text font-family="Apple SD Gothic Neo" x="336" y="120" fill="#0F172A" font-size="24" font-weight="700">노쇼와 연쇄 지연을 같이 줄이는 미용실 운영 도구</text>
+  <text font-family="Apple SD Gothic Neo" x="336" y="156" fill="#64748B" font-size="18">예약 리마인드, 실제 시술시간 기록, 권장 예약 간격 제안</text>
+
+  <rect x="336" y="194" width="160" height="42" rx="12" fill="#2563EB"/>
+  <text font-family="Apple SD Gothic Neo" x="372" y="221" fill="white" font-size="18" font-weight="700">신규 예약 등록</text>
+  <rect x="510" y="194" width="122" height="42" rx="12" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <text font-family="Apple SD Gothic Neo" x="546" y="221" fill="#64748B" font-size="16">디자이너 전체</text>
+  <rect x="646" y="194" width="106" height="42" rx="12" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <text font-family="Apple SD Gothic Neo" x="681" y="221" fill="#64748B" font-size="16">오늘 기준</text>
+
+  <g>
+    <rect x="336" y="264" width="212" height="90" rx="20" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <text font-family="Apple SD Gothic Neo" x="362" y="294" fill="#94A3B8" font-size="14" font-weight="700">오늘 연락해야 할 예약</text>
+    <text font-family="Apple SD Gothic Neo" x="362" y="332" fill="#0F172A" font-size="34" font-weight="700">12명</text>
+    <text font-family="Apple SD Gothic Neo" x="362" y="348" fill="#64748B" font-size="14">리마인드 발송 전 확인 필요</text>
+  </g>
+  <g>
+    <rect x="566" y="264" width="212" height="90" rx="20" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <text font-family="Apple SD Gothic Neo" x="592" y="294" fill="#94A3B8" font-size="14" font-weight="700">평균 소요시간 오차</text>
+    <text font-family="Apple SD Gothic Neo" x="592" y="332" fill="#0F172A" font-size="34" font-weight="700">11분</text>
+    <text font-family="Apple SD Gothic Neo" x="592" y="348" fill="#64748B" font-size="14">최근 14일 기준 자동 계산</text>
+  </g>
+  <g>
+    <rect x="796" y="264" width="212" height="90" rx="20" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <text font-family="Apple SD Gothic Neo" x="822" y="294" fill="#94A3B8" font-size="14" font-weight="700">즉시 조정 필요한 슬롯</text>
+    <text font-family="Apple SD Gothic Neo" x="822" y="332" fill="#0F172A" font-size="34" font-weight="700">2개</text>
+    <text font-family="Apple SD Gothic Neo" x="822" y="348" fill="#64748B" font-size="14">연쇄 지연 가능성 경고</text>
+  </g>
+
+  <g>
+    <rect x="336" y="388" width="146" height="144" rx="20" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="354" y="406" width="110" height="32" rx="12" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="372" cy="422" r="6" fill="#3B82F6"/>
+    <text font-family="Apple SD Gothic Neo" x="386" y="427" fill="#0F172A" font-size="16" font-weight="700">신규 문의</text>
+    <rect x="354" y="452" width="110" height="68" rx="16" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="366" y="464" width="54" height="20" rx="8" fill="#EFF6FF"/>
+    <text font-family="Apple SD Gothic Neo" x="376" y="478" fill="#2563EB" font-size="11" font-weight="700">오늘 연락</text>
+    <text font-family="Apple SD Gothic Neo" x="366" y="499" fill="#0F172A" font-size="15" font-weight="700">박은서</text>
+    <text font-family="Apple SD Gothic Neo" x="366" y="516" fill="#64748B" font-size="12">뿌리염색 · 민지</text>
+  </g>
+
+  <g>
+    <rect x="500" y="388" width="146" height="144" rx="20" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="518" y="406" width="110" height="32" rx="12" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="536" cy="422" r="6" fill="#8B5CF6"/>
+    <text font-family="Apple SD Gothic Neo" x="550" y="427" fill="#0F172A" font-size="16" font-weight="700">상담 예정</text>
+    <rect x="518" y="452" width="110" height="68" rx="16" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="530" y="464" width="42" height="20" rx="8" fill="#F5F3FF"/>
+    <text font-family="Apple SD Gothic Neo" x="541" y="478" fill="#7C3AED" font-size="11" font-weight="700">예정</text>
+    <text font-family="Apple SD Gothic Neo" x="530" y="499" fill="#0F172A" font-size="15" font-weight="700">정하린</text>
+    <text font-family="Apple SD Gothic Neo" x="530" y="516" fill="#64748B" font-size="12">셋팅펌 · 14:00</text>
+  </g>
+
+  <g>
+    <rect x="664" y="388" width="146" height="144" rx="20" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="682" y="406" width="110" height="32" rx="12" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="700" cy="422" r="6" fill="#10B981"/>
+    <text font-family="Apple SD Gothic Neo" x="714" y="427" fill="#0F172A" font-size="16" font-weight="700">상담 완료</text>
+    <rect x="682" y="452" width="110" height="68" rx="16" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="694" y="464" width="52" height="20" rx="8" fill="#ECFDF5"/>
+    <text font-family="Apple SD Gothic Neo" x="703" y="478" fill="#059669" font-size="11" font-weight="700">기록 반영</text>
+    <text font-family="Apple SD Gothic Neo" x="694" y="499" fill="#0F172A" font-size="15" font-weight="700">한지우</text>
+    <text font-family="Apple SD Gothic Neo" x="694" y="516" fill="#64748B" font-size="12">탈색+염색 · 190분</text>
+  </g>
+
+  <g>
+    <rect x="828" y="388" width="146" height="144" rx="20" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="846" y="406" width="110" height="32" rx="12" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="864" cy="422" r="6" fill="#F59E0B"/>
+    <text font-family="Apple SD Gothic Neo" x="878" y="427" fill="#0F172A" font-size="15" font-weight="700">보류 / 재확인</text>
+    <rect x="846" y="452" width="110" height="68" rx="16" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="858" y="464" width="64" height="20" rx="8" fill="#FFFBEB"/>
+    <text font-family="Apple SD Gothic Neo" x="867" y="478" fill="#B45309" font-size="11" font-weight="700">재연락 필요</text>
+    <text font-family="Apple SD Gothic Neo" x="858" y="499" fill="#0F172A" font-size="15" font-weight="700">최민아</text>
+    <text font-family="Apple SD Gothic Neo" x="858" y="516" fill="#64748B" font-size="12">볼륨매직 · 비용 문의</text>
+  </g>
+
+  <g>
+    <rect x="992" y="388" width="118" height="144" rx="20" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="1006" y="406" width="90" height="32" rx="12" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="1022" cy="422" r="6" fill="#E11D48"/>
+    <text font-family="Apple SD Gothic Neo" x="1036" y="427" fill="#0F172A" font-size="15" font-weight="700">밀림 위험</text>
+    <rect x="1006" y="452" width="90" height="68" rx="16" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="1018" y="464" width="32" height="20" rx="8" fill="#FFF1F2"/>
+    <text font-family="Apple SD Gothic Neo" x="1027" y="478" fill="#BE123C" font-size="11" font-weight="700">위험</text>
+    <text font-family="Apple SD Gothic Neo" x="1018" y="499" fill="#0F172A" font-size="15" font-weight="700">16:30</text>
+    <text font-family="Apple SD Gothic Neo" x="1018" y="516" fill="#64748B" font-size="12">민지 · 충돌</text>
+  </g>
+
+  <defs>
+    <linearGradient id="paint0_linear_164_2" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EFF6FF"/>
+    </linearGradient>
+  </defs>
+</svg>

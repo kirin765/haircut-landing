@@ -1,10 +1,10 @@
 'use client';
 
-import { useState } from 'react';
-import Toast from './Toast';
-
 export default function Benefits() {
-  const [toast, setToast] = useState<{ message: string; type: 'info' | 'warning' } | null>(null);
+  const handleScroll = () => {
+    const element = document.getElementById('email-signup');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   const benefits = [
     {
@@ -40,16 +40,7 @@ export default function Benefits() {
   ];
 
   return (
-    <>
-      {toast && (
-        <Toast
-          message={toast.message}
-          type={toast.type}
-          duration={4000}
-          onClose={() => setToast(null)}
-        />
-      )}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -83,14 +74,13 @@ export default function Benefits() {
             예약 리마인드와 실제 시술시간 기록만 잡아도 소규모 살롱 운영은 훨씬 덜 밀립니다.
           </p>
           <button
-            onClick={() => setToast({ message: '아직 개발 중입니다. 곧 오픈될 예정입니다! 📅', type: 'info' })}
+            onClick={handleScroll}
             className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition"
           >
             출시 알림 받기
           </button>
         </div>
       </div>
-      </section>
-    </>
+    </section>
   );
 }
