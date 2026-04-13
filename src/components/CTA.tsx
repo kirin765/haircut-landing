@@ -14,7 +14,10 @@ export default function CTA() {
           출시 전에 관심 살롱을 먼저 모아 실제 운영 흐름부터 맞출 예정입니다.
         </p>
 
-        <div className="bg-white/95 backdrop-blur-sm border border-white/20 rounded-lg p-8 sm:p-12 mb-12">
+        <div
+          id="email-signup"
+          className="bg-white/95 backdrop-blur-sm border border-white/20 rounded-lg p-8 sm:p-12 mb-12"
+        >
           <EmailForm />
         </div>
 

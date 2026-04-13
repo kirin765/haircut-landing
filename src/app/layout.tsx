@@ -6,6 +6,14 @@ import StructuredData from "@/components/StructuredData";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://noshowhair.com"),
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: ["/favicon.svg"],
+  },
   title: {
     default: "노쇼 없는 미용실 | 미용실 예약 리마인드·시술시간 기록·예약 간격 추천",
     template: "%s | 노쇼 없는 미용실",

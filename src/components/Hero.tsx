@@ -1,13 +1,8 @@
 'use client';
 
-import { useState } from 'react';
-import Toast from './Toast';
-
 declare let gtag: Function;
 
 export default function Hero() {
-  const [toast, setToast] = useState<{ message: string; type: 'info' | 'warning' } | null>(null);
-
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -20,23 +15,14 @@ export default function Hero() {
     });
 
     if (action === 'signup') {
-      setToast({ message: '아직 개발 중입니다. 곧 오픈될 예정입니다! 📅', type: 'info' });
+      handleScroll('email-signup');
     } else {
       handleScroll('features');
     }
   };
 
   return (
-    <>
-      {toast && (
-        <Toast
-          message={toast.message}
-          type={toast.type}
-          duration={4000}
-          onClose={() => setToast(null)}
-        />
-      )}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero text-white">
+    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero text-white">
       <div className="max-w-5xl mx-auto text-center">
         <p className="text-sm sm:text-base uppercase tracking-[0.24em] text-white/70 mb-4">
           Salon Operations Copilot
@@ -130,7 +116,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      </section>
-    </>
+    </section>
   );
 }
