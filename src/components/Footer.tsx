@@ -48,9 +48,10 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-gray-400">
-              © {currentYear} 노쇼 없는 미용실. All rights reserved.
-            </p>
+            <div className="text-sm text-gray-400 text-center md:text-left">
+              <p>© {currentYear} 노쇼 없는 미용실. All rights reserved.</p>
+              <p className="mt-2">사업자명 : 온누리문방구 | 사업자등록번호 : 892-02-03657 | 대표 : 김기완</p>
+            </div>
             <div className="flex gap-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white transition">
                 💬 카카오톡
