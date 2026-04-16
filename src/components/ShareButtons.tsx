@@ -154,10 +154,8 @@ export default function ShareButtons({
     <>
       {process.env.NEXT_PUBLIC_KAKAO_APP_KEY ? (
         <Script
-          src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"
+          src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js"
           strategy="afterInteractive"
-          integrity="sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4"
-          crossOrigin="anonymous"
           onLoad={initKakao}
         />
       ) : null}
