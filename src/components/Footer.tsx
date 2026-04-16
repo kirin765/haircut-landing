@@ -1,9 +1,25 @@
+'use client';
+
+import { useCallback, useState } from 'react';
+import ShareButtons from './ShareButtons';
+import Toast from './Toast';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [toast, setToast] = useState<string | null>(null);
+
+  const handleToast = useCallback((message: string) => {
+    setToast(message);
+  }, []);
+
+  const closeToast = useCallback(() => setToast(null), []);
 
   return (
     <footer className="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
+        <div className="mb-10 rounded-2xl bg-gray-800/50 p-6">
+          <ShareButtons variant="dark" onToast={handleToast} />
+        </div>
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-white font-bold text-lg mb-4">노쇼 없는 미용실</h3>
@@ -52,17 +68,13 @@ export default function Footer() {
               <p>© {currentYear} 노쇼 없는 미용실. All rights reserved.</p>
               <p className="mt-2">사업자명 : 온누리문방구 | 사업자등록번호 : 892-02-03657 | 대표 : 김기완</p>
             </div>
-            <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-white transition">
-                💬 카카오톡
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
-                📱 인스타그램
-              </a>
-            </div>
           </div>
         </div>
       </div>
+
+      {toast ? (
+        <Toast message={toast} type="success" onClose={closeToast} />
+      ) : null}
     </footer>
   );
 }
