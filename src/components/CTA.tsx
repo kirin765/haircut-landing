@@ -5,7 +5,7 @@ export default function CTA() {
     <section id="cta" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero text-white">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-          예약이 덜 밀리는 살롱 운영,<br />
+          예약이 덜 밀리는 미용실 운영,<br />
           지금 먼저 잡아두세요
         </h2>
         <p className="text-lg sm:text-xl mb-12 text-white/90">

@@ -23,11 +23,11 @@ export default function Problem() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="problem" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            소규모 미용실이 겪는 현실
+            미용실 예약 관리가 흔들릴 때 생기는 문제
           </h2>
           <p className="text-lg text-gray-600">
             노쇼만의 문제가 아니라 예약 간격이 틀어지는 운영 문제가 반복됩니다.

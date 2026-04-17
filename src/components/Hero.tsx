@@ -28,15 +28,18 @@ export default function Hero() {
           Salon Operations Copilot
         </p>
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-          노쇼와 연쇄 지연을<br />같이 줄이는 미용실 운영 도구
+          미용실 예약 관리 프로그램,<br />노쇼 방지와 시술시간 기록을 한 번에
         </h2>
         <p className="text-lg sm:text-xl mb-8 text-white/90">
-          자동 예약 리마인드로 노쇼를 줄이고, 디자이너별 실제 시술시간 기록으로
+          자동 예약 리마인드로 헤어샵 노쇼를 줄이고, 디자이너별 실제 시술시간 기록으로
           <br className="hidden sm:block" />
           다음 예약 간격까지 더 정확하게 추천합니다.
           <span className="text-sm sm:text-base text-white/80 block mt-3">
             첫 제품은 기존 예약 시스템을 바꾸지 않고, 종료 시각 기록과 권장 간격 제안부터 시작합니다.
           </span>
+        </p>
+        <p className="text-sm sm:text-base text-white/75 mb-6">
+          미용실 노쇼 방지 · 예약 리마인드 · 시술시간 기록 · 예약 간격 추천 · 디자이너별 평균시간
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
@@ -53,7 +56,7 @@ export default function Hero() {
           </button>
         </div>
 
-        <div className="mt-16 grid lg:grid-cols-[1.3fr_1fr] gap-6 text-left">
+        <div className="mt-16 grid lg:grid-cols-[1.1fr_0.9fr] gap-6 text-left">
           <div className="rounded-3xl border border-white/15 bg-white/10 backdrop-blur-sm p-8">
             <p className="text-sm uppercase tracking-[0.2em] text-white/65 mb-4">핵심 워크플로우</p>
             <div className="grid sm:grid-cols-2 gap-4 text-sm sm:text-base">
@@ -77,23 +80,27 @@ export default function Hero() {
           </div>
 
           <div className="rounded-3xl border border-white/15 bg-black/15 p-8">
-            <p className="text-sm text-white/70 mb-8">
-              운영 문제는 이미 검색되고 있습니다.
-              <br />
-              이제 포지셔닝만 더 날카롭게 만들면 됩니다.
+            <p className="text-sm text-white/70 mb-6">
+              검색어와 제품 메시지를 같은 단어로 맞췄습니다.
             </p>
-            <div className="space-y-6">
-              <div>
-                <div className="text-3xl font-bold">1,210</div>
-                <div className="text-white/70 text-sm">추정 평균 월간 검색량</div>
+            <div className="space-y-3 text-sm sm:text-base text-white/80">
+              <p>미용실 예약 관리 프로그램</p>
+              <p>헤어샵 노쇼 방지</p>
+              <p>시술시간 기록 기반 예약 간격 추천</p>
+              <p>디자이너별 평균시간과 편차 계산</p>
+            </div>
+            <div className="mt-8 grid grid-cols-3 gap-3 text-center">
+              <div className="rounded-2xl bg-black/15 p-4">
+                <p className="text-2xl font-bold">기존</p>
+                <p className="text-white/70 text-xs mt-1">예약 시스템 유지</p>
               </div>
-              <div>
-                <div className="text-3xl font-bold">1.15M+</div>
-                <div className="text-white/70 text-sm">관련 웹검색 결과 규모</div>
+              <div className="rounded-2xl bg-black/15 p-4">
+                <p className="text-2xl font-bold">실제</p>
+                <p className="text-white/70 text-xs mt-1">현장 시간 기록</p>
               </div>
-              <div>
-                <div className="text-3xl font-bold">195,000원</div>
-                <div className="text-white/70 text-sm">확인된 유사 솔루션 월 가격 중심대</div>
+              <div className="rounded-2xl bg-black/15 p-4">
+                <p className="text-2xl font-bold">추천</p>
+                <p className="text-white/70 text-xs mt-1">다음 간격 제안</p>
               </div>
             </div>
           </div>

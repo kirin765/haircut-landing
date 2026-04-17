@@ -35,7 +35,7 @@ export default function Solution() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            우리가 제공하는 솔루션
+            미용실 예약 관리 프로그램이 실제로 하는 일
           </h2>
           <p className="text-lg text-gray-600">
             노쇼 관리와 시술시간 기반 예약 운영을 한 흐름으로 묶습니다.

@@ -83,127 +83,130 @@ export default function Pricing() {
         />
       )}
       <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            합리적인 가격으로 시작하세요
-          </h2>
-          <p className="text-lg text-gray-600">
-            마이크로 SaaS답게 가볍게 도입하고, 운영 효과가 보이면 상위 플랜으로 올리는 구조입니다
-          </p>
-        </div>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              합리적인 가격으로 시작하세요
+            </h2>
+            <p className="text-lg text-gray-600">
+              마이크로 SaaS답게 가볍게 도입하고, 운영 효과가 보이면 상위 플랜으로 올리는 구조입니다
+            </p>
+          </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {plans.map((plan, index) => (
-            <div
-              key={index}
-              className={`relative rounded-lg overflow-hidden transition transform hover:scale-105 ${
-                plan.highlight
-                  ? "bg-gradient-hero text-white shadow-2xl scale-105 md:scale-100 ring-2 ring-purple-300"
-                  : "bg-white border border-gray-200 shadow-md"
-              }`}
-            >
-              {plan.highlight && (
-                <div className="absolute top-0 right-0 bg-red-500 text-white px-4 py-1 text-sm font-bold rounded-bl-lg">
-                  인기
-                </div>
-              )}
-
-              <div className="p-8">
-                {/* Plan Header */}
-                <h3 className={`text-2xl font-bold mb-2 ${plan.highlight ? "text-white" : "text-gray-900"}`}>
-                  {plan.name}
-                </h3>
-                <p className={`text-sm mb-6 ${plan.highlight ? "text-white/80" : "text-gray-600"}`}>
-                  {plan.description}
-                </p>
-
-                {/* Price */}
-                <div className="mb-6">
-                  <div className={`text-4xl font-bold ${plan.highlight ? "text-white" : "text-gray-900"}`}>
-                    {plan.price}
-                    {plan.period !== "협의" && plan.period !== "영구 무료" && (
-                      <span className={`text-lg font-normal ml-2 ${plan.highlight ? "text-white/80" : "text-gray-600"}`}>
-                        / {plan.period}
-                      </span>
-                    )}
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {plans.map((plan, index) => (
+              <div
+                key={index}
+                className={`relative rounded-lg overflow-hidden transition transform hover:scale-105 ${
+                  plan.highlight
+                    ? "bg-gradient-hero text-white shadow-2xl scale-105 md:scale-100 ring-2 ring-purple-300"
+                    : "bg-white border border-gray-200 shadow-md"
+                }`}
+              >
+                {plan.highlight && (
+                  <div className="absolute top-0 right-0 bg-red-500 text-white px-4 py-1 text-sm font-bold rounded-bl-lg">
+                    인기
                   </div>
-                  <p className={`text-sm mt-2 ${plan.highlight ? "text-white/70" : "text-gray-500"}`}>
-                    {plan.period}
-                  </p>
-                </div>
+                )}
 
-                {/* CTA Button */}
-                <button
-                  onClick={() => handlePlanClick(plan.name)}
-                  className={`w-full py-3 rounded-lg font-semibold mb-8 transition ${
-                    plan.highlight
-                      ? "bg-white text-purple-600 hover:bg-gray-50"
-                      : "border-2 border-purple-600 text-purple-600 hover:bg-purple-50"
-                  }`}
-                >
-                  {plan.cta}
-                </button>
-
-                {/* Features */}
-                <div className="space-y-4">
-                  <p className={`text-sm font-semibold ${plan.highlight ? "text-white/90" : "text-gray-700"}`}>
-                    포함 기능:
+                <div className="p-8">
+                  {/* Plan Header */}
+                  <h3 className={`text-2xl font-bold mb-2 ${plan.highlight ? "text-white" : "text-gray-900"}`}>
+                    {plan.name}
+                  </h3>
+                  <p className={`text-sm mb-6 ${plan.highlight ? "text-white/80" : "text-gray-600"}`}>
+                    {plan.description}
                   </p>
-                  <ul className="space-y-3">
-                    {plan.features.map((feature, idx) => (
-                      <li
-                        key={idx}
-                        className={`flex items-start text-sm ${plan.highlight ? "text-white/90" : "text-gray-700"}`}
-                      >
-                        <span className={`mr-3 text-lg flex-shrink-0 ${plan.highlight ? "text-white" : "text-green-500"}`}>
-                          ✓
+
+                  {/* Price */}
+                  <div className="mb-6">
+                    <div className={`text-4xl font-bold ${plan.highlight ? "text-white" : "text-gray-900"}`}>
+                      {plan.price}
+                      {plan.period !== "협의" && plan.period !== "영구 무료" && (
+                        <span className={`text-lg font-normal ml-2 ${plan.highlight ? "text-white/80" : "text-gray-600"}`}>
+                          / {plan.period}
                         </span>
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+                      )}
+                    </div>
+                    <p className={`text-sm mt-2 ${plan.highlight ? "text-white/70" : "text-gray-500"}`}>
+                      {plan.period}
+                    </p>
+                  </div>
+
+                  {/* CTA Button */}
+                  <button
+                    onClick={() => handlePlanClick(plan.name)}
+                    className={`w-full py-3 rounded-lg font-semibold mb-8 transition ${
+                      plan.highlight
+                        ? "bg-white text-purple-600 hover:bg-gray-50"
+                        : "border-2 border-purple-600 text-purple-600 hover:bg-purple-50"
+                    }`}
+                  >
+                    {plan.cta}
+                  </button>
+
+                  {/* Features */}
+                  <div className="space-y-4">
+                    <p className={`text-sm font-semibold ${plan.highlight ? "text-white/90" : "text-gray-700"}`}>
+                      포함 기능:
+                    </p>
+                    <ul className="space-y-3">
+                      {plan.features.map((feature, idx) => (
+                        <li
+                          key={idx}
+                          className={`flex items-start text-sm ${plan.highlight ? "text-white/90" : "text-gray-700"}`}
+                        >
+                          <span className={`mr-3 text-lg flex-shrink-0 ${plan.highlight ? "text-white" : "text-green-500"}`}>
+                            ✓
+                          </span>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* FAQ */}
-        <div className="bg-white rounded-lg p-8 border border-gray-200">
-          <h3 className="text-2xl font-bold mb-6 text-gray-900">자주 묻는 질문</h3>
-
-          <div className="space-y-6">
-            {[
-              {
-                q: "계약 기간이 있나요?",
-                a: "아니요, 언제든지 취소할 수 있습니다. 최소 계약 기간이 없습니다.",
-              },
-              {
-                q: "기존 예약 시스템을 바꿔야 하나요?",
-                a: "아니요. 첫 버전은 기존 예약 시스템을 유지한 채, 예약 데이터와 실제 시술시간 기록을 붙여 쓰는 방식입니다.",
-              },
-              {
-                q: "추천 예약 간격은 어떻게 계산되나요?",
-                a: "최근 5~20건의 디자이너별·시술별 실제 소요시간을 기준으로 평균과 편차를 계산해 권장값을 제안합니다.",
-              },
-              {
-                q: "문자 발송 비용이 별도로 들나요?",
-                a: "초기 버전은 문자 리마인드 중심이며, 대량 발송이나 알림톡은 상위 옵션으로 분리하는 방향을 검토 중입니다.",
-              },
-              {
-                q: "자동 최적화 엔진까지 제공하나요?",
-                a: "MVP는 아닙니다. 우선은 기록, 분석, 권장 간격, 밀림 위험 경고에 집중해 작은 팀도 바로 운영 개선 효과를 보게 합니다.",
-              },
-            ].map((item, idx) => (
-              <div key={idx}>
-                <h4 className="font-semibold text-gray-900 mb-2">{item.q}</h4>
-                <p className="text-gray-600">{item.a}</p>
               </div>
             ))}
           </div>
+
+          {/* FAQ */}
+          <div id="faq" className="bg-white rounded-lg p-8 border border-gray-200">
+            <h3 className="text-2xl font-bold mb-3 text-gray-900">자주 묻는 질문</h3>
+            <p className="text-gray-600 mb-6">
+              미용실 예약 관리 프로그램, 노쇼 방지, 시술시간 기록에 대해 가장 많이 묻는 내용을 정리했습니다.
+            </p>
+
+            <div className="space-y-6">
+              {[
+                {
+                  q: "기존 예약 시스템을 바꿔야 하나요?",
+                  a: "아니요. 기존 예약 시스템은 그대로 두고 예약 데이터와 실제 시술시간 기록을 붙여 쓰는 방식입니다.",
+                },
+                {
+                  q: "미용실 노쇼 방지는 어떻게 도와주나요?",
+                  a: "예약 리마인드를 중심으로 당일 공백을 줄이고, 노쇼와 당일 취소 패턴을 함께 확인할 수 있게 합니다.",
+                },
+                {
+                  q: "시술시간 기록은 어떻게 쓰나요?",
+                  a: "시술 시작과 종료 시각만 기록해도 디자이너별·메뉴별 실제 소요시간이 쌓이고 다음 예약 간격 추천에 반영됩니다.",
+                },
+                {
+                  q: "추천 예약 간격은 어떻게 계산되나요?",
+                  a: "최근 5~20건의 디자이너별·시술별 실제 소요시간을 기준으로 평균과 편차를 계산해 권장값을 제안합니다.",
+                },
+                {
+                  q: "어떤 미용실에 가장 잘 맞나요?",
+                  a: "염색과 펌 비중이 높고, 예약 간격이 조금만 흔들려도 대기와 공실이 생기는 소규모 살롱에 가장 잘 맞습니다.",
+                },
+              ].map((item, idx) => (
+                <div key={idx}>
+                  <h4 className="font-semibold text-gray-900 mb-2">{item.q}</h4>
+                  <p className="text-gray-600">{item.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
       </section>
     </>
   );

@@ -31,9 +31,11 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">제품</h4>
             <ul className="space-y-2 text-sm">
+              <li><a href="#problem" className="text-gray-400 hover:text-white transition">문제</a></li>
               <li><a href="#features" className="text-gray-400 hover:text-white transition">기능</a></li>
               <li><a href="#how-it-works" className="text-gray-400 hover:text-white transition">사용 방법</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">가격</a></li>
+              <li><a href="#pricing" className="text-gray-400 hover:text-white transition">가격</a></li>
+              <li><a href="#faq" className="text-gray-400 hover:text-white transition">FAQ</a></li>
             </ul>
           </div>
 
