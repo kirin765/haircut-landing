@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import DevelopmentBanner from '@/components/DevelopmentBanner';
 import Hero from '@/components/Hero';
 import MVPPreview from '@/components/MVPPreview';
+import CustomerHistoryPreview from '@/components/CustomerHistoryPreview';
 import Problem from '@/components/Problem';
 import Solution from '@/components/Solution';
 import HowItWorks from '@/components/HowItWorks';
@@ -17,6 +18,7 @@ export default function Home() {
       <DevelopmentBanner />
       <Hero />
       <MVPPreview />
+      <CustomerHistoryPreview />
       <Problem />
       <Solution />
       <HowItWorks />
