@@ -118,8 +118,9 @@ export default function MVPPreview() {
           </p>
         </div>
 
-        <div className="overflow-hidden rounded-[30px] border border-slate-200 bg-white shadow-[0_24px_80px_rgba(15,23,42,0.08)]">
-          <div className="grid lg:grid-cols-[220px_1fr]">
+        <div className="-mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0">
+        <div className="min-w-[900px] overflow-hidden rounded-[30px] border border-slate-200 bg-white shadow-[0_24px_80px_rgba(15,23,42,0.08)]">
+          <div className="grid grid-cols-[220px_1fr]">
             <aside className="border-r border-slate-200 bg-[#fbfcfe] p-6">
               <div>
                 <p className="text-lg font-bold text-slate-950">노쇼헤어</p>
@@ -178,7 +179,7 @@ export default function MVPPreview() {
                 </div>
               </div>
 
-              <div className="mt-5 grid gap-3 md:grid-cols-3">
+              <div className="mt-5 grid grid-cols-3 gap-3">
                 {summaryCards.map((item) => (
                   <div key={item.label} className="rounded-2xl border border-slate-200 bg-white p-4">
                     <p className="text-xs uppercase tracking-[0.18em] text-slate-400">{item.label}</p>
@@ -224,6 +225,7 @@ export default function MVPPreview() {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
