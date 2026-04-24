@@ -77,7 +77,7 @@ export default function Benefits() {
             onClick={handleScroll}
             className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition"
           >
-            출시 알림 받기
+            얼리버드 30% 할인 사전예약
           </button>
         </div>
       </div>

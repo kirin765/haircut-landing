@@ -13,7 +13,7 @@ export default function Header() {
           <li><a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition">운영 방식</a></li>
           <li><a href="#pricing" className="text-gray-600 hover:text-gray-900 transition">요금제</a></li>
           <li><a href="#faq" className="text-gray-600 hover:text-gray-900 transition">FAQ</a></li>
-          <li><a href="#cta" className="text-gray-600 hover:text-gray-900 transition">사전 등록</a></li>
+          <li><a href="#cta" className="bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-purple-700 transition text-sm">얼리버드 30% 할인</a></li>
         </ul>
       </nav>
     </header>

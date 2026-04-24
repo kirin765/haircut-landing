@@ -46,7 +46,7 @@ export default function Hero() {
             onClick={() => handleHeroCTA('signup')}
             className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition shadow-lg"
           >
-            사전 등록하기
+            얼리버드 30% 할인 사전예약
           </button>
           <button
             onClick={() => handleHeroCTA('learn_more')}
