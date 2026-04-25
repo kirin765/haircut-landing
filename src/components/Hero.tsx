@@ -24,18 +24,18 @@ export default function Hero() {
   return (
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero text-white">
       <div className="max-w-5xl mx-auto text-center">
-        <p className="text-sm sm:text-base uppercase tracking-[0.24em] text-white/70 mb-4">
-          Salon Operations Copilot
+        <p className="text-sm sm:text-base tracking-[0.18em] text-white/70 mb-4">
+          살롱 운영 보조 도구 · 기존 예약앱 유지
         </p>
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-          미용실 예약 관리 프로그램,<br />노쇼 방지와 시술시간 기록을 한 번에
+          네이버·카카오 예약은 그대로,<br />예약 간격만 데이터로 바로잡습니다
         </h2>
         <p className="text-lg sm:text-xl mb-8 text-white/90">
-          자동 예약 리마인드로 헤어샵 노쇼를 줄이고, 디자이너별 실제 시술시간 기록으로
+          디자이너별 실제 시술시간을 쌓아 다음 예약 간격을 자동 추천하고,
           <br className="hidden sm:block" />
-          다음 예약 간격까지 더 정확하게 추천합니다.
+          노쇼 리마인드부터 밀림 위험 사전 경고까지 한 화면에서 관리합니다.
           <span className="text-sm sm:text-base text-white/80 block mt-3">
-            첫 제품은 기존 예약 시스템을 바꾸지 않고, 종료 시각 기록과 권장 간격 제안부터 시작합니다.
+            예약 시스템 교체 없이 바로 붙여 쓰는 운영 보조 도구입니다.
           </span>
         </p>
         <p className="text-sm sm:text-base text-white/75 mb-6">

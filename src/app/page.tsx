@@ -6,7 +6,9 @@ import CustomerHistoryPreview from '@/components/CustomerHistoryPreview';
 import Problem from '@/components/Problem';
 import Solution from '@/components/Solution';
 import HowItWorks from '@/components/HowItWorks';
+import ComparisonSection from '@/components/ComparisonSection';
 import Benefits from '@/components/Benefits';
+import ROISection from '@/components/ROISection';
 import Pricing from '@/components/Pricing';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
@@ -22,7 +24,9 @@ export default function Home() {
       <Problem />
       <Solution />
       <HowItWorks />
+      <ComparisonSection />
       <Benefits />
+      <ROISection />
       <Pricing />
       <CTA />
       <Footer />
