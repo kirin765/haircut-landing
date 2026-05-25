@@ -27,9 +27,9 @@ export default function Hero() {
         <p className="text-sm sm:text-base tracking-[0.18em] text-white/70 mb-4">
           살롱 운영 보조 도구 · 기존 예약앱 유지
         </p>
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
           네이버·카카오 예약은 그대로,<br />예약 간격만 데이터로 바로잡습니다
-        </h2>
+        </h1>
         <p className="text-lg sm:text-xl mb-8 text-white/90">
           디자이너별 실제 시술시간을 쌓아 다음 예약 간격을 자동 추천하고,
           <br className="hidden sm:block" />

@@ -2,8 +2,19 @@ User-agent: *
 Allow: /
 Disallow: /private/
 Disallow: /admin/
+Disallow: /api/
 
-Sitemap: https://noshowhair.com/sitemap.xml
+User-agent: Yeti
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
 
 User-agent: GPTBot
 Allow: /
@@ -16,3 +27,5 @@ Allow: /
 
 User-agent: Google-Extended
 Allow: /
+
+Sitemap: https://noshowhair.com/sitemap.xml

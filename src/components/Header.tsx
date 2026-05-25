@@ -3,9 +3,13 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+          <a
+            href="/"
+            aria-label="노쇼 없는 미용실 홈"
+            className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent"
+          >
             노쇼 없는 미용실
-          </h1>
+          </a>
         </div>
         <ul className="hidden md:flex items-center gap-8">
           <li><a href="#problem" className="text-gray-600 hover:text-gray-900 transition">문제</a></li>

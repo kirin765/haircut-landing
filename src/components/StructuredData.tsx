@@ -11,10 +11,11 @@ export default function StructuredData() {
     'url': 'https://noshowhair.com',
     'logo': {
       '@type': 'ImageObject',
-      'url': 'https://noshowhair.com/logo.png',
-      'width': 512,
-      'height': 512,
+      'url': 'https://noshowhair.com/og-image.png',
+      'width': 1200,
+      'height': 630,
     },
+    'image': 'https://noshowhair.com/og-image.png',
     'contactPoint': {
       '@type': 'ContactPoint',
       'contactType': 'Customer Service',
